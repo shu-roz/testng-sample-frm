@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+
+<suite name ="Group annotated tests">
+    <test name ="Smoke Tests">
+
+
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+
+
+
+
+
+
+        <packages>
+            <!--            .*      -means ALL PACKAGES and ALL TESTS WITHIN YOUR FRAMEWORK             -->
+            <package name ="tests"/>
+<!--            <package name ="zzz_nonFrmwk"/>-->
+        </packages>
+
+    </test>
+
+</suite>

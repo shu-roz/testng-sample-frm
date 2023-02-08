@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+
+<!--apply timeout to all tests within this xml file-->
+<suite name ="Suite with a global Time-out" time-out="50000">
+    <test name ="Timeout Test">
+        <classes>
+            <class name = "zzz_nonFrmwk.testng_train.a007_DependencyOfOneTConAnotherTC"/>
+        </classes>
+
+    </test>
+
+</suite>

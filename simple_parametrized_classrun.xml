@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name ="Simple Parametrization through Annotations">
+
+    <test name ="Pick your own name for this group">
+        
+        <parameter name="search_Word" value="GECKO"/>
+        
+        
+        <classes>
+            <class name = "zzz_nonFrmwk.testng_train.a011_ParametersAnnoForParametrization">
+                <methods>
+                    <include name="searchTestHardCoded"/>
+                    <include name="searchTestParametrized"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+
+</suite>

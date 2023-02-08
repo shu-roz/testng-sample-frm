@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name ="Simple Class Run (non-parallel)">
+    <test name ="Pick your own name for this group">
+        <classes>
+            <class name = "zzz_nonFrmwk.testng_train.a04_NaturalPrioritizationTestNg"/>
+            <class name = "zzz_nonFrmwk.testng_train.a02_ConfigAnno"/>
+        </classes>
+    </test>
+</suite>

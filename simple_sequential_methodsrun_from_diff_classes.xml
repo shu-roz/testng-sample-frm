@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name ="Pick your own Suite name (non-parallel)">
+    <test name ="Pick your own name for this group">
+        <classes>
+
+            <class name = "zzz_nonFrmwk.testng_train.a04_NaturalPrioritizationTestNg">
+                <methods>
+                    <include name="zoomIn"/>
+                </methods>
+            </class>
+
+            <class name = "zzz_nonFrmwk.testng_train.a02_ConfigAnno">
+                <methods>
+                    <include name="testCase01"/>
+<!--                    alternatively, you can use the <exclude> tag to run everything but.... -->
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

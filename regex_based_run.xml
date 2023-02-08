@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!--when you have a standardized naming convention, you can utilize regex in customizing an XML file for determining which TC's to run-->
+<!--suppose all your UI TC names start as "TC0001_descriptionOfTC_UI" or "TC0002_descriptionOfTC_DB", "TC0003_descriptionOfTC_API"-->
+<!--if you want to run only TC's that end in 'API', you can utilize Regex to do weed out what you need in the test suite-->
+
+<suite name ="Pick Your Own Suite Name">
+    <test name ="Pick your Own Subcategory Name here">
+
+        <packages>
+
+            <package name =".*">
+                <include name="UI.*"/>
+                <!--above line means pick every TC in this entire suite that starts with 'UI'-->
+                <include name=".*API"/>
+                <!--above line means pick every TC in this entire suite that ends with 'API'-->
+                <include name=".*GWIN.*"/>
+                <!--above line means pick every TC in this entire suite that contains anywhere in the method title keyword 'GWIN'-->
+
+            </package>
+            
+        </packages>
+
+    </test>
+
+</suite>

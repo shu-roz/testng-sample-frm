@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name ="Simple Class Run (non-parallel)">
+    <test name ="Pick your own name for this group">
+        <packages>
+
+            <package name = "zzz_nonFrmwk"/>
+<!--            <package name = "tests"/>-->
+<!--                <package name = ".*"/>-->
+
+        </packages>
+
+    </test>
+</suite>

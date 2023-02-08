@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+
+<suite name ="Parallel_Classes Suite" parallel="classes" thread-count="4">
+    <test name ="Test tag">
+        <classes>
+            <class name = "tests.AllOrders"/>
+            <class name = "tests.LoginTests"/>
+            <class name = "tests.AllProducts"/>
+            <class name = "tests.PlaceOrderTests"/>
+        </classes>
+
+    </test>
+
+</suite>
